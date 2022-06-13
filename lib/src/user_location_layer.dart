@@ -15,7 +15,7 @@ import 'package:user_location/src/user_location_options.dart';
 class MapsPluginLayer extends StatefulWidget {
   final UserLocationOptions options;
   final MapState map;
-  final Stream<Null> stream;
+  final Stream<void> stream;
 
   MapsPluginLayer(this.options, this.map, this.stream);
 

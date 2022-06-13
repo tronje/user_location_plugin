@@ -7,7 +7,7 @@ import 'user_location_layer.dart';
 class UserLocationPlugin implements MapPlugin {
   @override
   Widget createLayer(
-      LayerOptions options, MapState mapState, Stream<Null> stream) {
+      LayerOptions options, MapState mapState, Stream<void> stream) {
     if (options is UserLocationOptions) {
       return MapsPluginLayer(options, mapState, stream);
     }
